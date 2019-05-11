@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - FaceClone</title>
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css" />
+    <link href="~/Content/css/yazi.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" type="text/css" href="~/Content/css/style.css">-->
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body class="yazi">
+    <!-- nav -->
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">FaceClone</a>
+     </nav>
+  
+
+    <!-- ./nav -->
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - DCD & FK </p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
