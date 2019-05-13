@@ -1,15 +1,28 @@
-﻿
-@{ 
+﻿@model IEnumerable<FacebookClone.Models.table_post>
+
+@{
     ViewBag.Title = "Akış";
 
 }
+<center>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <h4 class="display-4">Akış</h4>
-            <p>@ViewData["mesaj"]</p>
-            <img src="@ViewData["img"]" alt="Post İmg Link" />
-        </div>
+    <div class="container">
+        <h4 class="display-4"><u>Yayınlanmış Postlar</u></h4>
+        <button class="btn btn-outline-dark" value="Yeni Post At"><a href="@Url.Action("newpost")">Yeni Post At</a></button>
+        @foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="col-md-12">
+                    <hr />
+                    <p style="font-family:'Segoe UI';">@item.post_text</p>
+                    <img src="@item.post_img_link" width="250" height="250" alt="Post İmg Link" />
+                    <p style="font-family:'Segoe UI'; font-weight:900;">Gönderen : @item.gonderen</p>
+                    <hr />
+                </div>
+            </div>
+        }
+
+
     </div>
-</div>
+
+</center>  

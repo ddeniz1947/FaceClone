@@ -10,15 +10,6 @@
     <Property Name="version" Type="Int32" />
     <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
-  <EntityType Name="table_post">
-    <Key>
-      <PropertyRef Name="post_id" />
-    </Key>
-    <Property Name="post_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="post_text" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="post_img_link" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="user" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-  </EntityType>
   <EntityType Name="table_user">
     <Key>
       <PropertyRef Name="telno" />
@@ -32,7 +23,6 @@
   </EntityType>
   <EntityContainer Name="facecloneEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
-    <EntitySet Name="table_post" EntityType="Self.table_post" />
     <EntitySet Name="table_user" EntityType="Self.table_user" />
     <FunctionImport Name="sp_alterdiagram">
       <Parameter Name="diagramname" Mode="In" Type="String" />
@@ -64,6 +54,7 @@
       <Parameter Name="new_diagramname" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="table_post" EntityType="facecloneModel.table_post" />
   </EntityContainer>
   <ComplexType Name="sp_helpdiagramdefinition_Result">
     <Property Type="Int32" Name="version" Nullable="true" />
@@ -76,4 +67,13 @@
     <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
     <Property Type="Int32" Name="OwnerID" Nullable="false" />
   </ComplexType>
+  <EntityType Name="table_post">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="post_text" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="post_img_link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="gonderen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

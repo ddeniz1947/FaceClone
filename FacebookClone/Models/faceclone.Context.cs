@@ -28,8 +28,8 @@ namespace FacebookClone.Models
         }
     
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-        public virtual DbSet<table_post> table_post { get; set; }
         public virtual DbSet<table_user> table_user { get; set; }
+        public virtual DbSet<table_post> table_post { get; set; }
     
         public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
         {

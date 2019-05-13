@@ -14,9 +14,9 @@ namespace FacebookClone.Models
     
     public partial class table_post
     {
-        public int post_id { get; set; }
+        public int id { get; set; }
         public string post_text { get; set; }
         public string post_img_link { get; set; }
-        public string user { get; set; }
+        public string gonderen { get; set; }
     }
 }

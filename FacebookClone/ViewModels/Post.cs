@@ -8,18 +8,21 @@ namespace FacebookClone.ViewModels
 {
     public class PostNewPost
     {
+       
+
         [Required(ErrorMessage ="Lütfen Bu Alanı Doldurunuz.")]
-        public string post_text;
+        public string Post_text { get; set; }
 
         [Required(ErrorMessage = "Lütfen Fotoğraf Linkinizi ekleyiniz.")]
-        public string post_img_link;
+        public string Post_img_link { get; set; }
 
-        public string gonderen;
+        public string Gonderen { get; set; }
     }
   public class PostAkis
     {
-        public string kadi;
-        public string post_img;
-        public string post_text;
+       
+        public string kadi { get; set; }
+        public string post_img { get; set; }
+        public string post_text { get; set; }
     }
 }

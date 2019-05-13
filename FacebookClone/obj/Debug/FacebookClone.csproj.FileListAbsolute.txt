@@ -68,7 +68,6 @@ C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\tr\System
 C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\tr\System.Web.Webpages.Razor.resources.dll
 C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\tr\System.Web.Helpers.resources.dll
 C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\tr\System.Web.Mvc.resources.dll
-C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\obj\Debug\FacebookClone.csprojAssemblyReference.cache
 C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\obj\Debug\FacebookClone.csproj.CoreCompileInputs.cache
 C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\obj\Debug\FacebookClone.csproj.CopyComplete
 C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\obj\Debug\FacebookClone.dll
@@ -77,3 +76,10 @@ C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\EntityFra
 C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\EntityFramework.SqlServer.dll
 C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\EntityFramework.xml
 C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\EntityFramework.SqlServer.xml
+C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\Antlr3.Runtime.dll
+C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\Newtonsoft.Json.dll
+C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\System.Web.Optimization.dll
+C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\WebGrease.dll
+C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\Antlr3.Runtime.pdb
+C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\Newtonsoft.Json.xml
+C:\Users\Deniz Can DİNÇ\Source\Repos\FacebookClone\FacebookClone\bin\System.Web.Optimization.xml
