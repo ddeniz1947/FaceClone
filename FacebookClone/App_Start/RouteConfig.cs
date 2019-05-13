@@ -17,6 +17,11 @@ namespace FacebookClone
             routes.MapRoute("Home","", new { controller = "Home", action = "Index" });
             routes.MapRoute("Reg", "reg", new { controller = "Register", action = "Reg" });
             routes.MapRoute("olusturuldu", "olusturuldu", new { controller = "Register", action = "Reg" });
+            routes.MapRoute("akis", "akis", new { controller = "Post", action = "Akis" });
+            routes.MapRoute("newpost", "newpost", new { controller = "Post", action = "NewPost" });
+
+
+
         }
     }
 }

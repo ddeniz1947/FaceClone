@@ -12,6 +12,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="table_post">
+      <EntityTypeMapping TypeName="facecloneModel.table_post">
+        <MappingFragment StoreEntitySet="table_post">
+          <ScalarProperty Name="post_id" ColumnName="post_id" />
+          <ScalarProperty Name="post_text" ColumnName="post_text" />
+          <ScalarProperty Name="post_img_link" ColumnName="post_img_link" />
+          <ScalarProperty Name="user" ColumnName="user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="table_user">
       <EntityTypeMapping TypeName="facecloneModel.table_user">
         <MappingFragment StoreEntitySet="table_user">

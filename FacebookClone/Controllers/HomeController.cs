@@ -46,7 +46,7 @@ namespace FacebookClone.Controllers
             }
             if (dogrulama == true)
             {
-                return Content("Giris Yapildi");
+                return View("akis");
             }
             else
                 return Content("Giris Yapilamadi");

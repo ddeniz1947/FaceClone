@@ -15,6 +15,15 @@
           <Property Name="version" Type="int" />
           <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
+        <EntityType Name="table_post">
+          <Key>
+            <PropertyRef Name="post_id" />
+          </Key>
+          <Property Name="post_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="post_text" Type="nvarchar" MaxLength="50" />
+          <Property Name="post_img_link" Type="nvarchar" MaxLength="50" />
+          <Property Name="user" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="table_user">
           <Key>
             <PropertyRef Name="telno" />
@@ -59,6 +68,7 @@
         <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="facecloneModelStoreContainer">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="table_post" EntityType="Self.table_post" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="table_user" EntityType="Self.table_user" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
@@ -76,6 +86,15 @@
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
+        <EntityType Name="table_post">
+          <Key>
+            <PropertyRef Name="post_id" />
+          </Key>
+          <Property Name="post_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="post_text" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="post_img_link" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="user" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
         <EntityType Name="table_user">
           <Key>
             <PropertyRef Name="telno" />
@@ -89,6 +108,7 @@
         </EntityType>
         <EntityContainer Name="facecloneEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="table_post" EntityType="Self.table_post" />
           <EntitySet Name="table_user" EntityType="Self.table_user" />
           <FunctionImport Name="sp_alterdiagram">
             <Parameter Name="diagramname" Mode="In" Type="String" />
@@ -146,6 +166,16 @@
                 <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
                 <ScalarProperty Name="version" ColumnName="version" />
                 <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="table_post">
+            <EntityTypeMapping TypeName="facecloneModel.table_post">
+              <MappingFragment StoreEntitySet="table_post">
+                <ScalarProperty Name="post_id" ColumnName="post_id" />
+                <ScalarProperty Name="post_text" ColumnName="post_text" />
+                <ScalarProperty Name="post_img_link" ColumnName="post_img_link" />
+                <ScalarProperty Name="user" ColumnName="user" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
